@@ -1,31 +1,14 @@
-# Creating-multiple-events-and-analysing-machine-vibration-and-temperature-data-on-google-sheet-
+# Predictive Maintenance and Machine Health Monitoring
 
-# Interfacing  esp32 and NCD wireless vibration and temperature sensor
-Displaying Temperature Data on Ubidots  using esp32 and NCD wireless vibration and temperature sensor.
-![alt tag](https://github.com/mjScientech/https-github.com-mjScientech-ESP32-AND-SI7021/blob/master/Vibration-Temp-NO-Zigmo-600x400.png)
-# IoT Long Range Wireless Vibration And Temperature Sensor
-Introducing NCD’s Long Range IoT Industrial wireless vibration and temperature sensor, boasting up to a 2 Mile range using a wireless mesh networking architecture. Incorporating a precision 16-bit vibration and temperature sensor, this device transmits highly accurate vibration and temperature data at user-defined intervals.
+Predictive Maintenance and Machine health monitoring is one of the most critical and important parts of the automation industry. In an automation or production factory these machines work on an average 20 hours per day.  In modern automation, all these machines work together and stay in sync, so its very important that every single machine is healthy.  In the old days, the usual ways to monitor machine health was manual inspection and occasional temperature readings.  With modern day technology, we can monitor these machines 24-7 and analyze the health. By doing this we keep an eye on every single change the machine is going through. The machine health monitoring is also known as predictive maintenance.
 
-During Power-Up, this vibration sensor learns “normal” base-line vibration from the monitored device.  This base-line vibration is subtracted from regular sampled vibration readings to improve relevant vibration data.  Ideally, the monitored device should be off while the sensor is learning.  Once the sensor stabilizes and starts sending data, the device/machinery being monitored can be powered on.  This Industrial IoT wireless vibration sensor samples 3-axis of Vibration data for 100ms and then calculates RMS, Maximum, and Minimum vibration readings. This sensor combines these data with temperature data in a data packet, and transmits the result to modems and gateways within wireless range.  Once transmission is complete, the vibration sensor goes back to sleep, thus minimizing power consumption.
+**Whats Predictive Maintenance and Machine Health Monitoring?**
+Predictive maintenance and machine health monitoring go side by side.  If we know whats going on with the machine, we can predict when it needs repair or the end of it’s useful life. By knowing these two things we can work on fixing the problem on a schedule without any operational down-time. There are quite a few ways we can monitor device or machine health and a send notification to a technician when a machine needs some attention.  There are few device which are used to connect machine health data:
 
-Powered by just 2 AA batteries and an operational lifetime of 500,000 wireless transmissions, a 10 years battery life can be expected depending on environmental conditions and the data transmission interval.  Optionally, this sensor may be externally powered, making it an ideal choice for wireless vibration monitoring system for industrial equipment.  With an open communication protocol, this sensor transmits hardware encrypted data that can be integrated with just about any control system or gateway.  Data can be transmitted to a PC, a Raspberry Pi, to Losant IoT cloud, Microsoft® Azure® IoT, and an embedded system all at the same time. Sensor parameters and wireless transmission settings can be changed using our free LabVIEW® monitoring software on a desktop PC.
-
-The long range, price, accuracy, battery life and security features of Wireless Vibration Sensor makes it an affordable choice which exceeds the requirements for most of the industrial as well as consumer market applications.
-
-![alt tag](https://github.com/mjScientech/https-github.com-mjScientech-ESP32-AND-SI7021/blob/master/Zigmo_1.png)
-# ZigBee Coordinator Long Range Wireless Mesh Modem with USB Interface
-- **ZigBee Wireless Communication**
-Mesh Networking is simply the hottest wireless technology of our time. Period. It’s fast, it’s very easy to use, highly reliable, and self healing. Three components are required for the ZigBee Mesh Network, the Coordinator (C), the Router (R) and the Endpoint (E). Your computer can speak to a ZigBee Mesh Network using a Coordinator. Think of the Coordinator as the interface to a ZigBee Mesh Network. NCD Coordinators are equipped with a USB Interface. This ZigBee Coordinator mounts as a Serial Port on your computer, and you will develop software that sends Serial commands at 115.2K Baud. The primary job of a router is to bridge the wireless gap between your computer (the Coordinator) and the device (Endpoint). If the Coordinator cannot speak to the Endpoint device because it is out of range, a Router can be used to bridge the two devices together. Endpoints are simply devices. With regard to NCD products, Endpoints can be relay controllers, data collection devices, PWM devices, and much more.
-
-- **USB ZigBee Coordinator**
-Your computer can speaks to a ZB ZigBee Network using a Coordinator.  Think of the Coordinator as the interface to a ZB ZigBee Network.  NCD ZigBee Coordinators are equipped with a USB Interface.  USB Coordinators mount as a Serial Port on your computer, and you will develop software that sends Serial commands at 115.2K Baud.  Only ONE Coordinator should be installed within a wireless ZB ZigBee Network.  Two types of Coordinators are available.  AT and API.  Normally, AT coordinators are used.  AT coordinators use Terminal-like AT commands to speak to a ZB ZigBee Network.  They are easier to use than an API coordinator.  An API coordinator uses a string of carefully chosen bytes and checksums to communicate data to a ZigBee networking.  API coordinators are harder to use, but can communicate and switch between devices much faster.  This page will introduce you to AT coordinators.  You can choose between AT and API firmware at checkout.
-![alt tag](https://github.com/mjScientech/ESP32-AND-SI7021/blob/master/ESP32_1.png)
-# ESP-32
-The ESP32 makes it easy to use the Arduino IDE and the Arduino Wire Language for IoT applications. This ESp32 IoT Module combines Wi-Fi, Bluetooth, and Bluetooth BLE for a variety of diverse applications. This module comes fully-equipped with 2 CPU cores that can be controlled and powered individually, and with an adjustable clock frequency of 80 MHz to 240 MHz. This ESP32 IoT WiFi BLE Module with Integrated USB is designed to fit in all ncd.io IoT products.
-
-Monitor sensors and control relays, FETs, PWM controllers, solenoids, valves, motors and much more from anywhere in the world using a web page or a dedicated server.
-
-We manufactured our own version of the ESP32 to fit into NCD IoT devices, offering more expansion options than any other device in the world! Integrated USB port allows easy programming of the ESP32. The ESP32 IoT WiFi BLE Module is an incredible platform for IoT application development. This ESP32 IoT WiFi BLE Module can be programmed using Arduino IDE.
+- Temperature and Humidity Data Monitoring
+- Current and Voltage Monitoring
+- Vibration Monitoring
+In this article, we will read current and publish the data on Ubidots.  ubidots supports graphs, UI, notifications, and emails.  These features make it ideal for predictive maintenance analysis.We will also get the data in google sheets which will make predictive maintenance analysis more easier.
 
 Hardware :
 - [ESP-32](https://store.ncd.io/product/esp32-iot-wifi-ble-module-with-integrated-usb/)
