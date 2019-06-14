@@ -155,7 +155,7 @@ Ubidots' prebuilt integrations include:
 - Geofence notifications - [learn more](https://help.ubidots.com/user-guides/creating-a-geofence-alert)
 
 3. Then choose a device and associating variable that indicates the devices' "values".
-[![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/event4.PNG)
+[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi1.PNG)
 
 4. Now selct a thresold value for your event to trigger and compare it to device values and also select time to trigger your event .
 
