@@ -173,4 +173,25 @@ Ubidots' prebuilt integrations include:
 # Output of event in your mail
 [![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/mail1.PNG)
 
+# Export your Ubidots data to Google Sheets
+In this we can extract the data stored in the Ubidots cloud for further analysis.The possibilities are enormous; for instance, you could create an automatic report generator and send it to your customers every week.
+
+Another application would be device provisioning; if you have thousands of devices to deploy, and their information is in a Google Sheet, you could create a script to read the sheet and create a Ubidots data source for every line on the file.
+**Steps to do this-**
+- Create a Google Sheet and add two sheets to it with these names:
+
+1. Variables
+2. Values
+- From your Google Sheet, click on "Tools" then "Script Editor...", then "Blank Project":
+
+- Open the Script Editor:
+[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi45.PNG)
+- Add the code below (in the code section) to the script 
+[Script](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/script%20code.txt)
+- Done! now open your Google Sheet again and you'll see a new menu to trigger the functions:
+[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi65.PNG)
+
+# Result
+[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi137.PNG)
+
 
