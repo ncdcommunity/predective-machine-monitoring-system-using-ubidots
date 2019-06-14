@@ -1,0 +1,85 @@
+//Replace the following constants with your Ubidots token, the datasource you wish to import, and the Variable(s) you wish to retrieve. 
+
+var TOKEN = "XYZ";
+
+var DS_ID = "XYZ"
+
+var TEMP_ID = "XYZ"
+
+var PAGE_SIZE = "100"
+
+function onOpen() {
+
+    var sheet = SpreadsheetApp.getActive();
+
+    var menuItems = [
+
+        {name: 'Get Ubidots Variables', functionName: 'get_ds_variables'},
+
+        {name: 'Get Data', functionName: 'get_variable_data'}
+
+    ];
+
+    sheet.addMenu('Ubidots', menuItems);
+
+}
+
+function get_ds_variables(){
+
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Variables");
+
+    var options =
+
+    {
+
+        "contentType" : "application/json",
+
+        "headers" : {"X-Auth-Token": TOKEN},
+
+        "method": "get"
+
+    };
+
+    var response = UrlFetchApp.fetch("http://things.ubidots.com/api/v1.6/datasources/"+ DS_ID +"/variables/", options);
+
+    var obj = JSON.parse(response).results
+
+    for (var i = 0, l = obj.length; i < l; i++) {
+
+        var date = new Date(obj[i].last_activity)
+
+        sheet.appendRow([obj[i].name, date, obj[i].last_value.value, obj[i].unit]);
+
+    }
+
+}
+
+function get_variable_data(){
+
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Values");
+
+    var options =
+
+    {
+
+        "contentType" : "application/json",
+
+        "headers" : {"X-Auth-Token": TOKEN},
+
+        "method": "get"
+
+    };
+
+    var response = UrlFetchApp.fetch("http://things.ubidots.com/api/v1.6/variables/"+ TEMP_ID +"/values/?page_size="+ PAGE_SIZE, options);
+
+    var obj = JSON.parse(response).results
+
+    for (var i = 0, l = obj.length; i < l; i++) {
+
+        var date = new Date(obj[i].timestamp)
+
+        sheet.appendRow([date, obj[i].value, obj[i].context]);
+
+    }
+
+}
