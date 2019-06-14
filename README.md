@@ -133,7 +133,7 @@ The library cannot currently be used with hardware based on the ENC28J60 chip â€
           to your dashboard screen.
 # OUTPUT
 - **Now as the temperature/vibration  increases and decreases new data available inside the various variable.**
-![alt tag](https://github.com/mjScientech/ESP32-AND-Long-range-temperature-and-vibration-sensor/blob/master/outputncd%20vibration.PNG)
+![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/dashboard1.PNG)
 # Creating events in ubidots:
 1. Select Events (from the Data dropdown).
 ![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/event1.PNG)
