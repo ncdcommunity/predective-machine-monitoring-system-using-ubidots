@@ -192,6 +192,6 @@ Another application would be device provisioning; if you have thousands of devic
 [![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi65.PNG)
 
 # Result
-[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi137.PNG)
+[![alt tag](https://github.com/mjScientech/predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/googl1.PNG)
 
 
