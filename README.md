@@ -163,7 +163,7 @@ Ubidots' prebuilt integrations include:
 [![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/event6.PNG)
 
 6.  Configure the Event notice.
-[![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/event5.PNG)
+[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi23.PNG)
 
 7. Determine the activity window the events may/may not be executed.
 [![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/event9.PNG)
@@ -171,6 +171,6 @@ Ubidots' prebuilt integrations include:
 8. Confirm your Events.
 
 # Output of event in your mail
-[![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/outevent.PNG)
+[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/mail1.PNG)
 
 
