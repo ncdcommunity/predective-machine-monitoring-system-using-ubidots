@@ -121,7 +121,8 @@ The library cannot currently be used with hardware based on the ENC28J60 chip â€
 - **Inside device create new variable name sensor in which your temperature reading will be shown.**
 ![alt tag](https://github.com/mjScientech/ESP32-AND-SI7021/blob/master/variable.JPG)
                   
-         
+![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/variable1.PNG) 
+ 
 ![alt tag](https://github.com/mjScientech/https-github.com-mjScientech-ESP32-AND-SI7021/blob/master/variableout.JPG)
 
      Now you are able to view the Temperature and other sensors data which was previously viewed in serial monitor.This
