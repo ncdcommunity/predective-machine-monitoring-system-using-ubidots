@@ -178,7 +178,7 @@ Another application would be device provisioning; if you have thousands of devic
 - From your Google Sheet, click on "Tools" then "Script Editor...", then "Blank Project":
 
 - Open the Script Editor:
-[![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/ubi45.PNG)
+[![alt tag](https://github.com/ncdcommunity/predective-machine-monitoring-system-using-ubidots/blob/master/googlesheet1.png)
 - Add the code below (in the code section) to the script 
 [Script](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/script%20code.txt)
 - Done! now open your Google Sheet again and you'll see a new menu to trigger the functions:
