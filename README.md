@@ -5,7 +5,7 @@ Following condition are measured:
 - Temperature and Humidity Data Monitoring
 - Current and Voltage Monitoring
 - Vibration Monitoring
-In this article, we will read Temperature,vibration and publish the data on Ubidots.  ubidots supports graphs, UI, notifications, and emails.  These features make it ideal for predictive maintenance analysis. We will also get the data in google sheets which will make predictive maintenance analysis more easier.
+In this article, we will read Temperature,vibration and publish the data on Ubidots.  Ubidots supports graphs, UI, notifications, and emails.  These features make it ideal for predictive maintenance analysis. We will also get the data in google sheets which will make predictive maintenance analysis more easier.
 
 Hardware :
 - [ESP-32](https://store.ncd.io/product/esp32-iot-wifi-ble-module-with-integrated-usb/)
